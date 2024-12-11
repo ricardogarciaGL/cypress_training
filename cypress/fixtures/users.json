@@ -1,0 +1,11 @@
+{
+    "pass": "secret_sauce",
+    "badPass": "bad_pass",
+    "name_std": "standard_user",
+    "name_lck": "locked_out_user",
+    "name_pbl": "problem_user",
+    "name_glt": "performance_glitch_user",
+    "name_err": "error_user",
+    "name_vis": "visual_user",
+    "name_fake":"fake_user"
+}
