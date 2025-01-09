@@ -15,12 +15,12 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_std)
-        cy.get('#password').type(this.dataUsers.badPass)
+        cy.get('#user-name').type(this.dataUsers.name_badPass.user)
+        cy.get('#password').type(this.dataUsers.name_badPass.pass)
         
         cy.get('#login-button').click()
 
-        cy.get('#login_button_container > div > form > div.error-message-container.error > h3').should('contain','Epic sadface: Username and password do not match any user in this service')
+        cy.get('[data-test="error"]').should('contain','Epic sadface: Username and password do not match any user in this service')
 
         cy.url().should('not.contain', 'https://www.saucedemo.com/inventory.html') 
         
@@ -30,12 +30,12 @@ describe('Test cases for Login page', () => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_fake)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_fake.user)
+        cy.get('#password').type(this.dataUsers.name_fake.pass)
         
         cy.get('#login-button').click()
 
-        cy.get('#login_button_container > div > form > div.error-message-container.error > h3').should('contain','Epic sadface: Username and password do not match any user in this service')
+        cy.get('[data-test="error"]').should('contain','Epic sadface: Username and password do not match any user in this service')
 
         cy.url().should('not.contain', 'https://www.saucedemo.com/inventory.html') 
 
@@ -45,8 +45,8 @@ describe('Test cases for Login page', () => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_std)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_std.user)
+        cy.get('#password').type(this.dataUsers.name_std.pass)
         
         cy.get('#login-button').click()
 
@@ -58,12 +58,12 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_lck)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_lck.user)
+        cy.get('#password').type(this.dataUsers.name_lck.pass)
         
         cy.get('#login-button').click()
 
-        cy.get('#login_button_container > div > form > div.error-message-container.error > h3').should('contain','Epic sadface: Sorry, this user has been locked out.')
+        cy.get('[data-test="error"]').should('contain','Epic sadface: Sorry, this user has been locked out.')
 
         cy.url().should('not.contain', 'https://www.saucedemo.com/inventory.html')
 
@@ -73,8 +73,8 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_pbl)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_pbl.user)
+        cy.get('#password').type(this.dataUsers.name_pbl.pass)
         
         cy.get('#login-button').click()
 
@@ -86,8 +86,8 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_glt)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_glt.user)
+        cy.get('#password').type(this.dataUsers.name_glt.pass)
         
         cy.get('#login-button').click()
 
@@ -99,8 +99,8 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_err)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_err.user)
+        cy.get('#password').type(this.dataUsers.name_err.pass)
         
         cy.get('#login-button').click()
 
@@ -112,8 +112,8 @@ describe('Test cases for Login page', () => {
         
         cy.url().should('eq', 'https://www.saucedemo.com/')
         
-        cy.get('#user-name').type(this.dataUsers.name_vis)
-        cy.get('#password').type(this.dataUsers.pass)
+        cy.get('#user-name').type(this.dataUsers.name_vis.user)
+        cy.get('#password').type(this.dataUsers.name_vis.pass)
         
         cy.get('#login-button').click()
 

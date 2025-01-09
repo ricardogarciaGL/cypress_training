@@ -1,11 +1,11 @@
 {
-    "pass": "secret_sauce",
-    "badPass": "bad_pass",
-    "name_std": "standard_user",
-    "name_lck": "locked_out_user",
-    "name_pbl": "problem_user",
-    "name_glt": "performance_glitch_user",
-    "name_err": "error_user",
-    "name_vis": "visual_user",
-    "name_fake":"fake_user"
+    
+    "name_std":{ "user": "standard_user", "pass": "secret_sauce"},
+    "name_lck":{"user": "locked_out_user","pass": "secret_sauce"},
+    "name_pbl":{"user": "problem_user","pass": "secret_sauce"},
+    "name_glt":{"user": "performance_glitch_user","pass": "secret_sauce"},
+    "name_err":{"user": "error_user","pass": "secret_sauce"},
+    "name_vis":{"user": "visual_user","pass": "secret_sauce"},
+    "name_fake":{"user": "fake_user","pass": "secret_sauce"},
+    "name_badPass":{"user": "standard_user","pass": "badPass"}
 }
