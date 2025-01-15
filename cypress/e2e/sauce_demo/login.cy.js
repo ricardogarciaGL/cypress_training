@@ -52,6 +52,15 @@ describe('Test cases for Login page', () => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html') // Login success
 
+        cy.get('.app_logo').should('contain','Swag Labs') //New page headTitle
+
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Backpack')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bike Light')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bolt T-Shirt')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Fleece Jacket')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Onesie')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Test.allTheThings() T-Shirt (Red)')
+
     });
 
     it('test a correct login for locked_out_user', function () {
@@ -80,6 +89,15 @@ describe('Test cases for Login page', () => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html') // Login success
 
+        cy.get('.app_logo').should('contain','Swag Labs') //New page headTitle
+
+        cy.get('[data-test="inventory-item-sauce-labs-backpack-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+        cy.get('[data-test="inventory-item-sauce-labs-bike-light-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+        cy.get('[data-test="inventory-item-sauce-labs-bolt-t-shirt-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+        cy.get('[data-test="inventory-item-sauce-labs-fleece-jacket-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+        cy.get('[data-test="inventory-item-sauce-labs-onesie-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+        cy.get('[data-test="inventory-item-test.allthethings()-t-shirt-(red)-img"]').should('have.attr','src').should('include','/static/media/sl-404.168b1cce.jpg')
+
     });
 
     it('test a correct login for performance_glitch_user', function () {
@@ -92,6 +110,13 @@ describe('Test cases for Login page', () => {
         cy.get('#login-button').click()
 
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html') // Login success
+
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Backpack')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bike Light')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bolt T-Shirt')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Fleece Jacket')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Onesie')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Test.allTheThings() T-Shirt (Red)')
 
     });
 
@@ -106,6 +131,13 @@ describe('Test cases for Login page', () => {
 
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html') // Login success
 
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Backpack')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bike Light')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bolt T-Shirt')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Fleece Jacket')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Onesie')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Test.allTheThings() T-Shirt (Red)')
+
     });
 
     it('test a correct login for visual_user', function () {
@@ -118,6 +150,13 @@ describe('Test cases for Login page', () => {
         cy.get('#login-button').click()
 
         cy.url().should('eq', 'https://www.saucedemo.com/inventory.html') // Login success
+
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Backpack')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bike Light')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Bolt T-Shirt')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Fleece Jacket')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Sauce Labs Onesie')
+        cy.get('[data-test="inventory-item-name"]').should('contain','Test.allTheThings() T-Shirt (Red)')
 
     });
 
