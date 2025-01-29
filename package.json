@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ricardogarciaGL/cypress_training/issues"
   },
-  "homepage": "https://github.com/ricardogarciaGL/cypress_training#readme"
+  "homepage": "https://github.com/ricardogarciaGL/cypress_training#readme",
+  "devDependencies": {
+    "cypress": "^14.0.1"
+  }
 }
