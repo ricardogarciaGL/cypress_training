@@ -1,0 +1,29 @@
+{
+  "name": "cypress_framework",
+  "version": "1.0.0",
+  "description": "Repository for training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "npx cypress open",
+    "hdl_chrome": "cypress run --browser chrome",
+    "hd_chrome": "cypress run --headed --browser chrome",
+    "hdl_electron": "cypress run --browser electron",
+    "hd_electron": "cypress run --headed --browser electron",
+    "hdl_firefox": "cypress run --browser firefox",
+    "hd_firefox": "cypress run --headed --browser firefox"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardogarciaGL/cypress_training.git"
+  },
+  "author": "Ricardo Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricardogarciaGL/cypress_training/issues"
+  },
+  "homepage": "https://github.com/ricardogarciaGL/cypress_training#readme",
+  "devDependencies": {
+    "cypress": "^14.0.1"
+  }
+}
